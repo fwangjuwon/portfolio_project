@@ -1,3 +1,11 @@
 .m_nav_display{
     justify-content: end;
 }
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content{
+justify-content: space-between;    
+}

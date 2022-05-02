@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JUWON HWANG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/portfolio/css/style.css">
+  <link rel="stylesheet" href="/portfolio/css/array.css">
+
+</head>
+
+<body>
+  <!-- navbar header 시작 -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+
+      <ul class="navbar-nav">
+        <div class="m_nav_display d-flex">
+          <div>
+            <a class="navbar-brand" href="#">
+              <img src="/portfolio/images/cat.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
+            </a>
+          </div>
+
+          <div class="d-flex">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar header 끝 -->
+
+  <!-- body 시작 -->
+  <!-- about시작 -->
+  <section id="about" class="section section__container">
+    <h1>ABOUT ME</h1>
+    <p>황주원 (Female)<br>
+      1990.11.13(+)<br>
+      (Mobile) 010.4782.2368<br>
+      fwangjuwon@naver.com
+    </p> <br><br>
+
+    <img src="/portfolio/images/hwang.jpg" alt="Juwon's profile photo" class="home_avatar">
+
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-running"></i>
+        </div>
+        <h2 class="major__title">Who?</h2>
+        <div class="major__description">
+          '세상에 건강한 영향을 미칠 수 있는 사람'
+          사용자 '수만명'에게 신나고 편리한 서비스를 제공하고 그들의 생활에 긍정적인 영향을 끼칠 수 있는 개발자가 되고자 합니다.
+          정체되어있지 않고 더 발전하기 위해
+          항상 노력합니다.
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">
+          HTML5, CSS3, Javascript, JQuery, Bootstrap <br>
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <h2 class="major__title">Back-end</h2>
+        <div class="major__description">
+          Java, Oracle, <br>
+          JDBC, Spring, Servlet, Mybatis <br>
+        </div>
+      </div>
+
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <!-- <img src="imgs/favicon3.png" width="30px" alt="explain" class="job__logo">
+                  <div class="job__description">
+                      <p class="job__name">beat camp</p>
+                      <p class="job__period">6months</p>
+                  </div> -->
+      </div>
+    </div>
+
+  </section>
+  <!-- about 끝 -->
+
+  <!-- project시작 -->
+  <section id="work" class="section">
+    <div class="section__container">
+      <div class="section__container">
+        <h1>PROJECT</h1>
+        <h3>More details about my projects ⇊ </h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">All<span class="category__count">6</span></button>
+          <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">4</span>
+          </button>
+          <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">1</span>
+          </button>
+          <button class="category__btn" data-filter="learning">Learning<span class="category__count">1</span>
+          </button>
+        </div>
+
+        <div class="work__projects">
+          <!-- 위의 버튼 클릭하면 data filter 값에 따라서 데이터 타입에 해당하는 것들 보여주기. -->
+          <a href="https://github.com/yuna1880/Login_Project" class="project" target="blank" data-type="back-end">
+            <img class="project__img" src="imgs/porjects/console.png" alt="Login_Project" width="200px">
+            <div class="project__deiscription">
+              <h3>Login Project</h3>
+              <span>Console project with Java and Oracle (JDBC)</span>
+            </div>
+          </a>
+          <a href="https://www.notion.so/yunakwon/Portfolio-Project-4fd0ebd0d9d6491694325feb5d48c0ae" class="project"
+            target="blank" data-type="front-end">
+            <img class="project__img" src="imgs/projects/baking_pic2.jpg" alt="Portfolio_Project" width="200px">
+            <div class="project__deiscription">
+              <h3>Portfolio_Project</h3>
+              <span>Portfolio_Project with HTML5,CSS3 and Javascript</span>
+            </div>
+          </a>
+          <a href="https://github.com/yuna1880/Ski_Resort" class="project" target="blank" data-type="back-end">
+            <img class="project__img" src="imgs/porjects/ski.png" alt="SKI_Project" width="200px">
+            <div class="project__deiscription">
+              <h3>Ski Reservation Project</h3>
+              <span>Console project with Java and Oracle(JDBC)</span>
+            </div>
+          </a>
+          <a href="https://github.com/yuna1880/BakingClass_Reservation_Project" class="project" target="blank"
+            data-type="back-end">
+            <img class="project__img" src="imgs/projects/baking_pic.jpg" alt="Baking_Project" width="200px">
+            <div class="project__deiscription">
+              <h3>Baking Class Reservation Website Project</h3>
+              <span>JSP + MyBatis 를 이용한 <br> 베이킹 원데이 클래스 예약 사이트</span>
+            </div>
+          </a>
+          <a href="http://alwaysbom.xyz/" class="project" target="blank" data-type="back-end">
+            <img class="project__img" src="imgs/projects/섬네일2.jpg" alt="Flower_Project" width="200px">
+            <div class="project__deiscription">
+              <h3>Flower Subscription & Shopping mall Website Project</h3>
+              <span>Spring Framework 를 이용한 <br> '새늘봄' 꽃 정기구독 사이트</span>
+              <span>(정기구독 & 꽃다발 쇼핑 & 플라워 클래스 구현)</span>
+            </div>
+          </a>
+          <a href="https://blog.naver.com/yunang1880" class="project" target="blank" data-type="learning">
+            <img class="project__img" src="imgs/projects/blog_pic.jpg" alt="Learning_Blog" width="200px">
+            <div class="project__deiscription">
+              <h3>Learning Blog</h3>
+              <span>기술 블로그</span>
+              <span>배운것을 정리하고 버그 및 오류를 <br> 기록해두는 기술 블로그</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- project 끝 -->
+  <!-- body 끝 -->
+
+  <!-- footer 시작 -->
+  <section id="contact" class="section">
+    <h1 class="contact__title">Let's work together!</h1>
+    <h2 class="contact__email">fwangjuwon@naver.com</h2>
+    <div class="contact__links">
+      <a href="https://github.com/yuna1880" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://blog.naver.com/yunang1880" target="_blank">
+        <i class="fas fa-splotch"></i>
+      </a>
+    </div>
+    <p class="contact__rights"> Juwon Hwang 2022 - All rights reserved
+    </p>
+  </section>
+
+  <!-- footer 끝 -->
+</body>
+
+</html>
